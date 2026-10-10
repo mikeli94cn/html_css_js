@@ -1,0 +1,83 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Browser File Read & Write</title>
+<style>
+body { font-family: sans-serif; margin: 40px; }
+        .box { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+textarea { width: 100%; height: 150px; margin-top: 10px; }
+button { padding: 10px 15px; background: #007bff; color: white; border: none; cursor: pointer; }
+button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+
+<h2>Browser File I/O Demo</h2>
+
+    <!-- Step 1: Read File -->
+    <div class="box">
+        <h3>1. Select a Text File to Read</h3>
+        <input type="file" id="fileInput" accept=".txt">
+    </div>
+
+    <!-- Step 2: Show / Edit Content -->
+    <div class="box">
+        <h3>2. File Content (Edit before downloading if you like)</h3>
+        <textarea id="fileContent" placeholder="File content will appear here..."></textarea>
+    </div>
+
+    <!-- Step 3: Write / Download File -->
+    <div class="box">
+        <h3>3. Save / Download as New File</h3>
+        <button id="downloadBtn">Download modified.txt</button>
+    </div>
+
+    <script>
+        const fileInput = document.getElementById('fileInput');
+        const fileContent = document.getElementById('fileContent');
+        const downloadBtn = document.getElementById('downloadBtn');
+
+// --- READ: Handle File Upload ---
+        fileInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+    if (!file) return;
+
+            const reader = new FileReader();
+
+    // This event fires when FileReader finishes reading the file
+    reader.onload = function(e) {
+        fileContent.value = e.target.result;
+    };
+
+    // Read the file as plain text
+    reader.readAsText(file);
+});
+
+        // --- WRITE: Handle File Download ---
+        downloadBtn.addEventListener('click', function() {
+            const textToWrite = fileContent.value;
+
+    // Create a Blob containing our text data
+            const blob = new Blob([textToWrite], { type: 'text/plain;charset=utf-8' });
+
+    // Create a temporary hidden anchor link element
+            const tempLink = document.createElement('a');
+
+    // Generate an internal object URL representing our blob data
+    tempLink.href = URL.createObjectURL(blob);
+    tempLink.download = 'modified.txt'; // The filename it will save as
+
+    // Programmatically click the link to trigger the browser download
+    document.body.appendChild(tempLink);
+    tempLink.click();
+
+    // Clean up: remove the link and revoke the object URL from memory
+    document.body.removeChild(tempLink);
+    URL.revokeObjectURL(tempLink.href);
+});
+    </script>
+
+</body>
+</html>
