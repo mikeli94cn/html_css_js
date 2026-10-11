@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-<title>CSV to Browser Console</title>
+    <title>CSV to Browser Console</title>
 </head>
+
 <body>
 
-<h3>Upload a CSV File to Log Content to the Console</h3>
-<p>Press <strong>F12</strong> or right-click and choose "Inspect" -> "Console" to see the output.</p>
-    
+    <h3>Upload a CSV File to Log Content to the Console</h3>
+    <p>Press <strong>F12</strong> or right-click and choose "Inspect" -> "Console" to see the output.</p>
+
     <input type="file" id="csvFileInput" accept=".csv">
 
-        <script>
-        document.getElementById('csvFileInput').addEventListener('change', function(e) {
+    <script>
+        document.getElementById('csvFileInput').addEventListener('change', function (e) {
             const file = e.target.files[0];
-    if (!file) return;
+            if (!file) return;
 
             const reader = new FileReader();
 
-    // This triggers when the file finishes reading
-    reader.onload = function(event) {
+            // This triggers when the file finishes reading
+            reader.onload = function (event) {
                 const text = event.target.result;
 
-        // Split file contents cleanly into rows using the corrected regex literal
+                // Split file contents cleanly into rows using the corrected regex literal
                 const lines = text.split(/\r?\n/);
 
-        console.log("--- START OF CSV FILE ---");
+                console.log("--- START OF CSV FILE ---");
 
-        lines.forEach((line, index) => {
-        if (line.trim() === '') return; // Skip empty rows
-                    
+                lines.forEach((line, index) => {
+                    if (line.trim() === '') return; // Skip empty rows
+
                     const cells = line.split(',');
 
-        // Log the row number along with the array of cell data
-        console.log(`Row ${index + 1}:`, cells);
+                    // Log the row number along with the array of cell data
+                    console.log(`Row ${index + 1}:`, cells);
                 });
 
-        console.log("--- END OF CSV FILE ---");
-    };
+                console.log("--- END OF CSV FILE ---");
+            };
 
-    // Start reading the file as text
-    reader.readAsText(file);
-});
+            // Start reading the file as text
+            reader.readAsText(file);
+        });
     </script>
 </body>
+
 </html>
