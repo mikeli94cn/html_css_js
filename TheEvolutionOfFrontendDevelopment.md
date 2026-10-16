@@ -14,7 +14,7 @@ BestHub
 
 ![10 Famous HTML-only Website Examples · DevPractical](https://images.openai.com/static-rsc-4/nyaSAZnEbfHgv8RnHi5bOV21Pp3LRlC3srGVvRhFQIuasLwx_poWfjP7v3F886MeMSk2uly8MT6tNJ8iY9VUOYfpK2o1SWy2zI0jEvYKxmzHiW3XBQ73wzaK4BY6YymyxZvkJaIyOasW3YhUmdd3dZRWnlHdqlgquxWkdoD0gNw?purpose=inline)
 
-Add to Favorites
+
 
 ### 1. Static Web
 
@@ -24,7 +24,7 @@ HTML documents, hyperlinks, and simple pages.
 
 ![Lissa Explains it All -- HTML Help and Tutorial for Kids](https://images.openai.com/static-rsc-4/L1Co3wCykpq0ouSsIOlOB8icEL_vE4aAya6hkniceD4j__U0cuWR3wjbiIWW88rE12Fbx8RbauK5478bCEPwZBL9Dywd06wEa2zM1X6SJoTLVrKDdo8t_XTOr9Qh2HV8v3hgTE0kRDIL-RWKkZKk6wTlrNPK_itMWYeG7V_3LOA?purpose=inline)
 
-Add to Favorites
+
 
 ### 2. Styled and scripted Web
 
@@ -34,7 +34,7 @@ CSS, JavaScript, browser scripting, and dynamic server-generated pages.
 
 ![Here's What Gmail Looked Like In 2004, The Year Your Favorite Inbox Was Born](https://images.openai.com/static-rsc-4/u51H2K9erqR3pwvcgOQ9mKm-0DqFAsmbNrI14TGIh2oQAluBDaiYGWGpZL8HEeVhhROxlWefsXFFZsF4vHFJTawfCRLju_LjkDdvOxxRPwV03GufdD8P1CDdCsbTFqJG4jXztRNTm--z7gwyNMefy-_wd3ZTSKngO5yYqIt9-DM?purpose=inline)
 
-Add to Favorites
+
 
 ### 3. Web 2.0 and AJAX
 
@@ -44,7 +44,7 @@ Pages update parts of their content without full reloads.
 
 ![Single Page Applications - Angular vs Knockout](https://images.openai.com/static-rsc-4/RZWb5e401RaDlGbFHctOl-046en13Gpyyo6nZpEPcWVQnyc90WoRxobs5_svcq9O60NMBdCHw7M9ZnhlCWV-qV3tWVrIokebNTOo321aVETTtHXuOOsMVjUJjiFO6-Dm5X8Ut2XgZnFVMMWx9snwE8jML8tZgdlcb5prp6kfloU?purpose=inline)
 
-Add to Favorites
+
 
 ### 4. Single-Page Applications
 
@@ -54,7 +54,7 @@ JavaScript increasingly manages whole applications in the browser.
 
 ![React js online course from SpaceLab](https://images.openai.com/static-rsc-4/MbTo5b37MvdhzKSGmJlI7BcPwsvV0r4G8g356-cJKjSB19mnsKSnmzTVIZ0x1Qr2CbR8MEuimU_AEBz1mvJXuLDAYqXB7baXJqnHU1yCpFd8NlzTpPMJNQboV_EHfMqqwoZzXlmi37q3zV1VUuVxs_K6YQkJv7Er9J36Hy5HvNg?purpose=inline)
 
-Add to Favorites
+
 
 ### 5. Component-driven development
 
@@ -64,7 +64,7 @@ Reusable components, TypeScript, and mature development toolchains.
 
 ![Oyapar — Profesyonel E-Ticaret Otomasyon Paketi](https://images.openai.com/static-rsc-4/CcPGBL8eGL1Rirr2qzvICHr-xkeUxwiqDwCixRQG0XzroEzS9vF4yCwoPYQw2Ez2FrI_U8C3dMM-sqwqp8-qoN51_5Pj-J57HFYUX0eoBsBvbMfVEYxkw7aJpcbFHV7KCBAgVECelY57tnfP5EnJg5Ymr2q8jZTXavwaXQKZ-QU?purpose=inline)
 
-Add to Favorites
+
 
 ### 6. Performance and hybrid rendering
 
@@ -74,7 +74,7 @@ Static generation, server-side rendering, and better loading performance.
 
 ![Replit Agent Review 2026: Build Entire Apps with a Prompt | TechSifted](https://images.openai.com/static-rsc-4/vS8kc4_RjA2MSRSW_WLgvDCwB3D2tXBvXCbL5ExXCQIeDD6sutz8-5GjXoBAn1dr40FZs849tjYHiIAqfDFFsU7eEVytnP2o_KY1UGGA1B6BNsRTobIAfXNgV02-npjBw9Vef9ukni7twX4MrzDdabF5KPsqW7qQovN8tTr0rI4?purpose=inline)
 
-Add to Favorites
+
 
 ### 7. Modern frontend engineering
 
@@ -371,27 +371,21 @@ New technologies often emerge because an earlier approach becomes difficult to m
 ## 10. Frontend and backend: how they fit together
 
 Since you're learning Java backend development, understanding the relationship between frontend and backend is especially useful.
-
+```
 ## Frontend
-
 HTML · CSS · JavaScript · React
-
 Displays students, collects input, responds to user actions
 
 ## HTTP / REST API
-
 Requests and responses, often using JSON
 
 ## Backend
-
 Java · Spring Boot
-
 Validates input, applies business rules, accesses the database
 
 Database
-
 Stores student records persistently
-
+```
 For example, when a user adds a student:
 
 1. HTML provides the form.
@@ -417,37 +411,28 @@ MDN
 ## 11. A practical learning roadmap
 
 You do not need to master the entire frontend ecosystem before starting backend development.
-
-## 1
-
-Web foundations
-
+```
+## 1 Web foundations
 HTML, CSS, JavaScript fundamentals, browser DevTools, and HTTP.
 
-## 2
-
-Build a static website
-
+## 2 Build a static website
 Create a student list, form, navigation, and responsive layout without a framework.
 
-## 3
-
-Add JavaScript
-
+## 3 Add JavaScript
 Implement adding, searching, editing, and deleting students in browser memory.
 
-## 4
-
-Connect Spring Boot
-
+## 4 Connect Spring Boot
 Replace in-memory frontend data with REST API requests and persistent database storage.
 
-## 5
-
-Learn a frontend framework
-
+## 5 Learn a frontend framework
 Once you understand the fundamentals, learn TypeScript and React or another framework based on your goals.
-
+```
 For structured tutorials, the MDN Web Docs frontend learning curriculum is a good starting point: [Learn web development](https://developer.mozilla.org/en-US/docs/Learn_web_development).
 
-My recommendation: learn frontend development in two layers. First, understand the browser platform itself—HTML, CSS, JavaScript, DOM, and HTTP. Then study frameworks, build tools, and rendering architectures. That order will help you understand why modern tools exist rather than merely memorizing their APIs.
+My recommendation: learn frontend development in two layers. 
+
+First, understand the browser platform itself—HTML, CSS, JavaScript, DOM, and HTTP. 
+
+Then study frameworks, build tools, and rendering architectures. 
+
+That order will help you understand why modern tools exist rather than merely memorizing their APIs.
