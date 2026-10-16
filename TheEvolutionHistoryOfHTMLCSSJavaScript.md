@@ -14,7 +14,7 @@ Together, they transformed the Web from a collection of static documents into in
 
 ![File Badge.svg - Wikimedia Commons](https://images.openai.com/static-rsc-4/GNBha2vzTCUIj0wsBkJC7pS5-VYYsJbImxvhljyjO-jCPm6Cg3tdIvlydhY6DKZTjA8xluquAqtyCuA6luziv7APOPIwH1cUwnWHQjTN_tPl3rCN1L5PiNTVTJ607X5t9BmGuT-pZtq2Dj1fFkq1q8DXT6IFCPMtMKfxXsTxhhU?purpose=inline)
 
-Add to Favorites
+
 
 ## HTML — Structure
 
@@ -26,7 +26,7 @@ Example: “This is a heading.”
 
 ![File logo.svg - Wikimedia Commons](https://images.openai.com/static-rsc-4/2MK3wvo41L0TqnyB_4dXtB__7ByYTDVzc_MxMXeZqrv2RuXuHrxTN7eNgAtgi5butKk_L5w2i8j-x0HsTh76g6rGt32a0zzLV-7JCy6X-LJ75Q8dQUmNdMT2prjsNCX-5OxqExjFvKdpVvn8agk5oEm0iOEJvd71HF_a1LRm6cQ?purpose=inline)
 
-Add to Favorites
+
 
 ## CSS — Presentation
 
@@ -38,7 +38,7 @@ Example: “Make this heading blue and large.”
 
 ![Dennis Kimathi](https://images.openai.com/static-rsc-4/SF-KlNcjvFUGR_fVXP9cFr11MXGad3j3QLhw7uWB-8kxb-7cyhUL3ytzBasE8nuJ95yNkQM-yOwaaUONIRlkMyvJT8EU45GS7D_9vxd9S2HbE9_pd_xiW8hqp2Wo7qs0aMbn1bDomqGm-x6pvRYAaQNiohmbtUWF7SCY-jbeJ-0?purpose=inline)
 
-Add to Favorites
+
 
 ## JavaScript — Behavior
 
@@ -130,7 +130,7 @@ CSS introduced a more systematic approach: describe the appearance separately fr
 
 ![Cuál fue la primera página web que se pudo visitar hace 30 años - Meristation](https://images.openai.com/static-rsc-4/NpGAzDAwvDwWLEW0fZ3MPrS0rfIftzUxhtwq3_I29NyQKsHkbHMD5qlQrvTBhBSJmaB9j0a3Lf9fdEaQbrpm5H3CGqKYm24nKO0SEMMYYWU9lMYCGiijlgYJ75Jr90xXOK1zuDc92v_606V8xUh3PNTxdj8woMS4ZZQHCUi4IPc?purpose=inline)
 
-Add to Favorites
+
 
 1990s — Basic styling
 
@@ -138,7 +138,7 @@ CSS1 (1996) introduced core properties for fonts, colors, text, margins, and spa
 
 ![Browser Zoom Comparison | AlastairC](https://images.openai.com/static-rsc-4/uzA8TaQFcvMuh4Zu_No3pVk1wOQzCKpzTSTB_kYBSY19k6rEe0T7WAhoLtclkyMpgkmm727z64GUOhHRODNG_yeVbMe6dQ6FXu-ianToQ4kmwj_JFLT9O_R_qLeDZNt4R46uJlhQ2GMdoZqqQq_rcJnLXVt9r02ZWVfyQ1TxNlM?purpose=inline)
 
-Add to Favorites
+
 
 2000s — Layout and design
 
@@ -146,7 +146,7 @@ CSS2 and CSS2.1 expanded positioning, media-specific styling, and other layout c
 
 ![Headstart Website Page Template for Webflow | Web design tools, Templates, Responsive website template](https://images.openai.com/static-rsc-4/ZP8-Q9SN4JyEwrrM2jS285E0KtMo3UdL2J8L5VFth3GAt1EcUtIlMLyGifyX00b7TLRsC_gQ_wYAhICHiXBENWkCKXHyGx0wAITj8x68ZYRrePilLnYVpcreG4tVuSyNU1r2FGVtSV-g0SjNs_wWt-aq0I5wWI0Ravy8N7nGWHg?purpose=inline)
 
-Add to Favorites
+
 
 2010s — Responsive and flexible layouts
 
@@ -154,7 +154,7 @@ Media queries, Flexbox, CSS Grid, transitions, and animations made responsive in
 
 ![Ascend Creative | Elevate Your Digital Impact with Strategic Digital Solutions](https://images.openai.com/static-rsc-4/b2xQz_CjwXUSiRPH69zOa3eio1ZpUUZvh8I49KDJlImRQ_iTLZ7sv7pAXZnszD9IaPoX4Hqj9ojyspK1ZmTMvSQFccB0w2nrtTxf37a6h6qhYyYZiy8iCoZOD6Fon5tI52CYI7Mca6jVWir_aUjcQLzT45u29WrDdzvGYmGH2HQ?purpose=inline)
 
-Add to Favorites
+
 
 2020s onward — A more capable design language
 
@@ -290,23 +290,19 @@ Notice the division of responsibilities:
 ## 7. The bigger picture: the evolution of frontend development
 
 HTML, CSS, and JavaScript are the foundation. Over time, additional tools have been built on top of them.
-
+```
 HTML + CSS + JavaScript
-
 The core browser technologies
-
+  |
 Libraries and frameworks
-
 React · Vue · Angular · Svelte
-
+  |
 Development tools and languages
-
 TypeScript · Vite · npm · testing tools
-
+  |
 Web applications
-
 Websites · dashboards · online stores · interactive applications
-
+```
 These layers solve different problems. React, for example, helps organize user interfaces, while TypeScript adds a static type system to JavaScript. Neither replaces the underlying role of HTML, CSS, and JavaScript in the browser.
 
 ## 8. Recommended learning order
